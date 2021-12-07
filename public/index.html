@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" class="light">
+  <head>
+    <!--meta tags-->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"
+    />
+    <meta name="theme-color" content="#ffffff" />
+    <!--title-->
+    <title>Sketch</title>
+    <!--CSS-->
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <!--p5 libraries-->
+    <script src="libraries/p5.min.js"></script>
+    <script src="libraries/p5.sound.min.js"></script>
+    <!--socket.io-->
+    <script src="/socket.io/socket.io.js"></script>
+    <!--p5 script-->
+    <script src="sketch.js"></script>
+    <!--theming script-->
+    <script src="theme.js"></script>
+  </head>
+  <body>
+    <div id="p5_loading" class="loadingclass"></div>
+    <div id="container">
+      <div class="footer">
+        <button
+          id="toggleP5Theme"
+          class="item"
+          onclick="togglePageTheme();toggleP5Theme()"
+        >
+          <span>switch theme</span>
+        </button>
+        <button id="saveScreenshot" class="item" onclick="saveScreenshot()">
+          <span>save a screenshot</span>
+        </button>
+    </div>
+  </body>
+</html>

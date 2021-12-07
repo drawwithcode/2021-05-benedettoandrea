@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  /* position, dimensions */
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  padding: 0;
+  /* behavioral settings */
+  overflow: hidden;
+  /* styles, colours */
+  background: var(--bg);
+  /* fonts */
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+}
+
+canvas {
+  /* behavioral settings */
+  display: block;
+}
+
+.loadingclass {
+  /* position, dimensions */
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+#container {
+  /* position, dimensions */
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  /* behavioral settings */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer {
+  /* position, dimensions */
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: 0px;
+  padding: 10px;
+  /* styles, colours */
+  background: transparent;
+}
+
+.footer .item {
+  /* position, dimensions */
+  border: none;
+  padding: 5px;
+  margin-right: 5px;
+  /* behavioral settings */
+  cursor: pointer;
+  /* styles, colours */
+  background: transparent;
+  color: white;
+  mix-blend-mode: difference;
+  /* fonts */
+  font-size: small;
+}
+
+/* themes */
+:root {
+  --black: #000000;
+  --white: #ffffff;
+}
+
+.light {
+  --bg: var(--white);
+  --text: var(--black);
+}
+
+.dark {
+  --bg: var(--black);
+  --text: var(--white);
+}
