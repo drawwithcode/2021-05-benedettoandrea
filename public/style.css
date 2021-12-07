@@ -46,6 +46,18 @@ canvas {
   justify-content: center;
 }
 
+.header {
+  /* position, dimensions */
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  margin: 0px;
+  padding: 10px;
+  /* styles, colours */
+  background: transparent;
+}
+
 .footer {
   /* position, dimensions */
   position: absolute;
@@ -62,7 +74,6 @@ canvas {
   /* position, dimensions */
   border: none;
   padding: 5px;
-  margin-right: 5px;
   /* behavioral settings */
   cursor: pointer;
   /* styles, colours */
@@ -70,7 +81,34 @@ canvas {
   color: white;
   mix-blend-mode: difference;
   /* fonts */
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
   font-size: small;
+  text-align: left;
+}
+
+.header .description {
+  /* position, dimensions */
+  border: none;
+  padding: 5px;
+  /* styles, colours */
+  background: transparent;
+  color: white;
+  mix-blend-mode: difference;
+  /* fonts */
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: small;
+  text-align: left;
+}
+
+@media only screen and (max-device-width: 480px) {
+  .footer {
+    /* behavioral settings */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 0px;
+  }
 }
 
 /* themes */
