@@ -62,8 +62,8 @@ function draw() {
 }
 
 function mouseDragged() {
-  angleX = map(mouseX, -width / 2, width / 2, 360, 0);
-  angleY = map(mouseY, -height / 2, height / 2, 360, 0);
+  angleX = map(mouseX, -width / 2, width / 2, 0, 360);
+  angleY = map(mouseY, -height / 2, height / 2, 0, 360);
   clientPattern.setRotation(angleX, angleY);
   let message = {
     x: angleX,

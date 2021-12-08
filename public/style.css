@@ -58,6 +58,21 @@ canvas {
   background: transparent;
 }
 
+.header .description {
+  /* position, dimensions */
+  border: none;
+  padding: 5px;
+  /* styles, colours */
+  background: transparent;
+  color: white;
+  mix-blend-mode: difference;
+  /* fonts */
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: small;
+  text-align: left;
+}
+
 .footer {
   /* position, dimensions */
   position: absolute;
@@ -76,21 +91,6 @@ canvas {
   padding: 5px;
   /* behavioral settings */
   cursor: pointer;
-  /* styles, colours */
-  background: transparent;
-  color: white;
-  mix-blend-mode: difference;
-  /* fonts */
-  font-family: "Inter", sans-serif;
-  font-weight: 400;
-  font-size: small;
-  text-align: left;
-}
-
-.header .description {
-  /* position, dimensions */
-  border: none;
-  padding: 5px;
   /* styles, colours */
   background: transparent;
   color: white;
