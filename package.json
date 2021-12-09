@@ -19,7 +19,6 @@
   "homepage": "https://github.com/drawwithcode/2021-05-benedettoandrea#readme",
   "dependencies": {
     "express": "^4.17.1",
-    "Express": "^3.0.1",
     "socket.io": "^4.4.0"
   }
 }
