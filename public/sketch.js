@@ -115,7 +115,7 @@ class moirePattern {
   }
 }
 
-// toggle the theme between light and dark
+// toggle between themes (light/dark)
 function toggleP5Theme() {
   if (currentTheme === "dark") {
     themeBackground = 255;

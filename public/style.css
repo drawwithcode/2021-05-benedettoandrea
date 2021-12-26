@@ -33,6 +33,10 @@ canvas {
   position: absolute;
   width: 100%;
   height: 100%;
+  /* behavioral settings */
+  overflow: hidden;
+  /* styles, colours */
+  background-color: transparent;
 }
 
 #container {
@@ -58,7 +62,19 @@ canvas {
   background: transparent;
 }
 
-.header .description {
+.footer {
+  /* position, dimensions */
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: 0px;
+  padding: 10px;
+  /* styles, colours */
+  background: transparent;
+}
+
+.description {
   /* position, dimensions */
   border: none;
   padding: 5px;
@@ -73,19 +89,7 @@ canvas {
   text-align: left;
 }
 
-.footer {
-  /* position, dimensions */
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  margin: 0px;
-  padding: 10px;
-  /* styles, colours */
-  background: transparent;
-}
-
-.footer .item {
+.item {
   /* position, dimensions */
   border: none;
   padding: 5px;
