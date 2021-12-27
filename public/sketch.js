@@ -1,7 +1,10 @@
+// pattern control
 let angleX = 0;
 let angleY = 0;
 let radius;
 const detail = 6;
+
+// theming
 let currentTheme = "light";
 let themeBackground = 255;
 let themeFill = 0;
@@ -53,6 +56,7 @@ function draw() {
     radius = windowWidth / 150;
   }
 
+  // display the client's object (a single pattern)
   clientPattern.display();
 
   // cycle through each object (called pattern) stored in peersPattern and display it
@@ -62,9 +66,12 @@ function draw() {
 }
 
 function mouseDragged() {
+  // each time the cursor is moved, the client's pattern rotates
   angleX = map(mouseX, -width / 2, width / 2, 0, 360);
   angleY = map(mouseY, -height / 2, height / 2, 0, 360);
   clientPattern.setRotation(angleX, angleY);
+
+  // send the updated rotation to the server
   let message = {
     x: angleX,
     y: angleY,
