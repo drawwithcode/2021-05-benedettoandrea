@@ -1,9 +1,17 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@font-face {
+  font-family: "TexGyreHerosRegular";
+  src: url("./assets/fonts/texgyreheros-regular.otf") format("opentype");
+}
 
 * {
+  /* behavioral settings */
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
+  /* fonts */
+  font-family: "TexGyreHerosRegular";
+  font-size: small;
+  line-height: 120%;
 }
 
 html,
@@ -18,9 +26,6 @@ body {
   overflow: hidden;
   /* styles, colours */
   background: var(--bg);
-  /* fonts */
-  font-family: "Inter", sans-serif;
-  font-weight: 400;
 }
 
 canvas {
@@ -83,9 +88,6 @@ canvas {
   color: white;
   mix-blend-mode: difference;
   /* fonts */
-  font-family: "Inter", sans-serif;
-  font-weight: 400;
-  font-size: small;
   text-align: left;
 }
 
@@ -97,13 +99,14 @@ canvas {
   cursor: pointer;
   /* styles, colours */
   background: transparent;
-  color: white;
+  color: #808080;
   mix-blend-mode: difference;
   /* fonts */
-  font-family: "Inter", sans-serif;
-  font-weight: 400;
-  font-size: small;
   text-align: left;
+}
+
+.item:hover {
+  color: white;
 }
 
 /* responsiveness */

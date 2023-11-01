@@ -1,2 +1,3 @@
-# node-and-p5-template
-Bootstrapped project using node and p5
+# Collaborative Moiré Pattern
+
+Create moiré patterns with other users and save them on your device.
